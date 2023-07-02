@@ -94,7 +94,7 @@ class PSO:
             social = self.c2 * r2 * \
                 (best_neighbor_position - particle.position)
 
-            new_velocity = self.w * \
+            new_velocity = self.w(self.curr_iter) * \
                 particle.velocity + cognitive + social
 
             particle.velocity = new_velocity
