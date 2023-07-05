@@ -6,7 +6,6 @@ if __name__ == '__main__':
 
     c1 = 2.05
     c2 = 2.05
-    
 
     topology = "GLOBAL"
 
@@ -20,7 +19,7 @@ if __name__ == '__main__':
 
     pso = PSO(agents, dimensions, max_iter, problem, topology, c1, c2, w_decay)
 
-    best_fit, best_pos, convergence = pso.optimize()
+    best_fit, best_pos, convergence = pso.optimize() # Apenas uma execução?
 
     print(best_fit)
     print(best_pos)
